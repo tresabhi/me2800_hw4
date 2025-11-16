@@ -183,14 +183,14 @@ class Controller_Node(Node):
                 + ".txt"
             )
             f = open(fname, "w")
-            f.write(f"Total time to goal: {total_seconds:.2f} seconds \n")
-            f.write(f"Location of goal, (x,y)=({self.desired_x},{self.desired_y}) \n")
-            f.write(f"Linear gains: Kp={self.get_parameter('kp_dist_parm').value}, ")
-            f.write(f"Ki={self.get_parameter('ki_dist_parm').value}, ")
-            f.write(f"Kd={self.get_parameter('kd_dist_parm').value} \n")
-            f.write(f"Angular gains: Kp={self.get_parameter('kp_ang_parm').value}, ")
-            f.write(f"Ki={self.get_parameter('ki_ang_parm').value}, ")
-            f.write(f"Kd={self.get_parameter('kd_ang_parm').value} \n")
+            f.write(f"|{total_seconds:.2f}|")
+            f.write(f"{self.desired_x},{self.desired_y}|")
+            f.write(f"{self.get_parameter('kp_dist_parm').value}|")
+            f.write(f"{self.get_parameter('ki_dist_parm').value}|")
+            f.write(f"{self.get_parameter('kd_dist_parm').value}|")
+            f.write(f"{self.get_parameter('kp_ang_parm').value}|")
+            f.write(f"{self.get_parameter('ki_ang_parm').value}|")
+            f.write(f"{self.get_parameter('kd_ang_parm').value}|")
             f.close()
 
             # now regular ROS stuff
