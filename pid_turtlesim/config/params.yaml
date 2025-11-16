@@ -1,13 +1,13 @@
 turtle_controller:
   ros__parameters:
     # controller gains (in terms of linear distance first)
-    kp_dist_parm: 30.0
-    ki_dist_parm: 30.0
-    kd_dist_parm: 30.0
+    kp_dist_parm: 7.0
+    ki_dist_parm: 6.0
+    kd_dist_parm: 5.0
     # controller gains (now in terms of angle/heading)
-    kp_ang_parm: 30.0
-    ki_ang_parm: 30.0
-    kd_ang_parm: 30.0
+    kp_ang_parm: 20.0
+    ki_ang_parm: 49.0
+    kd_ang_parm: 20.0
     # parameters for determining when the robot has hit its goal
     eps_dist_tol: 0.1
     eps_ang_tol: 0.08
