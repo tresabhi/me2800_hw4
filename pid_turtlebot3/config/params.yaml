@@ -6,8 +6,8 @@ turtlebot3_controller:
   ros__parameters:
     eps_ang_tol: 0.1
     eps_dist_tol: 0.1
-    kd_ang_parm: 0.6366197723675814
-    kd_dist_parm: 0.5
+    kd_ang_parm: 0.12732395447351627
+    kd_dist_parm: 0.1
     ki_ang_parm: 0.12732395447351627
     ki_dist_parm: 0.1
     kp_ang_parm: 0.12732395447351627
