@@ -165,7 +165,7 @@ class Controller_Node(Node):
             #
             # write information to file
             fname = (
-                "time/"
+                "times/"
                 + str(total_seconds)
                 + "sec"
                 + "_kpl"
