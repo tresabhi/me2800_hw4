@@ -1,13 +1,13 @@
 turtlebot3_controller:
   ros__parameters:
     # controller gains (in terms of linear distance first)
-    kp_dist_parm: 0.3
-    ki_dist_parm: 0.08
-    kd_dist_parm: 0.02
+    kp_dist_parm: 0.0
+    ki_dist_parm: 0.0
+    kd_dist_parm: 0.0
     # controller gains (now in terms of angle/heading)
-    kp_ang_parm: 1.0
-    ki_ang_parm: 1.0
-    kd_ang_parm: 3.0
+    kp_ang_parm: 0.0
+    ki_ang_parm: 0.0
+    kd_ang_parm: 0.0
     # parameters for determining when the robot has hit its goal
     eps_dist_tol: 0.1
     eps_ang_tol: 0.01
